@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Introduction This page demonstrates how to use Hugo and github to build your personal web page.
+Setup Hugo  Install HUGO on Ubuntu by this command  sudo apt install hugo
+Create new website named myblog hugo new site myblog it shows:   Congratulations! Your new Hugo site is created in /home/jc/myblog.
+Just a few more steps and you&rsquo;re ready to go:
+ Download a theme into the same-named folder.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Build Your First Website with Hugo" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://joshchen.github.io/docs/Tech-Misc/Web/" />
+
+<title>Build Your First Website with Hugo | Josh Chen</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.508cb7d44af698c8168fb53b994c078279d27ebf22955771fcc28c795a2e3aee.css" integrity="sha256-UIy31Er2mMgWj7U7mUwHgnnSfr8ilVdx/MKMeVouOu4=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.bd8263dc236078ffd80ed05eb5769ad13ee146c5d0c4025e7e87c3cc0445f8b3.js" integrity="sha256-vYJj3CNgeP/YDtBetXaa0T7hRsXQxAJefofDzARF&#43;LM=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="http://joshchen.github.io/docs/Tech-Misc/Web/index.xml" title="Josh Chen" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Josh Chen</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d66b34c48e1ec38301fc37490f372df6" class="toggle" checked />
+    <label for="section-d66b34c48e1ec38301fc37490f372df6" class="flex justify-between">
+      <a role="button" class="">Tech</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="http://joshchen.github.io/docs/Tech-Misc/Web/" class=" active">Build Your First Website with Hugo</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://joshchen.github.io/docs/Bookmarks/" class="">Bookmarks</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://joshchen.github.io/docs/About/" class="">About Me</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/joshchen" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Build Your First Website with Hugo</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#setup-hugo">Setup Hugo</a></li>
+    <li><a href="#start-to-add-something-for-yourself">Start to Add Something for Yourself</a></li>
+    <li><a href="#push-to-pagesgithubio">Push to pages.github.io</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introduction">Introduction</h1>
+<p>This page demonstrates how to use Hugo and github to build your personal web page.</p>
+<h1 id="setup-hugo">Setup Hugo</h1>
+<ol>
+<li>Install HUGO on Ubuntu by this command</li>
+</ol>
+<p><code>sudo apt install hugo</code></p>
+<ol start="2">
+<li>Create new website named myblog
+<code>hugo new site myblog</code>
+it shows:</li>
+</ol>
+<blockquote>
+<p>Congratulations! Your new Hugo site is created in /home/jc/myblog.</p>
+<p>Just a few more steps and you&rsquo;re ready to go:</p>
+<ol>
+<li>Download a theme into the same-named folder.
+Choose a theme from <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> or
+create your own with the &ldquo;hugo new theme <THEMENAME>&rdquo; command.</li>
+<li>Perhaps you want to add some content. You can add single files
+with &ldquo;hugo new <SECTIONNAME>/<FILENAME>.<FORMAT>&rdquo;.</li>
+<li>Start the built-in live server via &ldquo;hugo server&rdquo;.</li>
+</ol>
+<p>Visit <a href="https://gohugo.io/">https://gohugo.io/</a> for quickstart guide and full documentation.</p>
+</blockquote>
+<p>A folder &lsquo;~/myblog&rsquo; is created.</p>
+<ol start="3">
+<li>Choose a theme from  <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>. You can get more details by right-click.
+Add the Hugo theme by &lsquo;git submodule. Here is using hugo-theme-cleanwhite for example.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~/myblog
+git init
+
+git submodule add https://github.com/zhaohuabing/hugo-theme-cleanwhite.git themes/hugo-theme-cleanwhite
+</code></pre></div><ol start="4">
+<li>
+<p>Run example site from the root of themes/hugo-theme-cleanwhite/exampleSite:
+e.g. ~/myblog/themes/hugo-theme-cleanwhite/exampleSite
+<code> hugo server --themesDir ../..</code></p>
+</li>
+<li>
+<p>Check with browser
+Use web browser to connect 
+  <a href="http://localhost:1313">http://localhost:1313</a>, and then you should be able to see the the page with hugo-theme-cleanwhite theme.</p>
+</li>
+<li>
+<p>Stop server
+Use <code>Ctrl  + C</code> to stop server.</p>
+</li>
+<li>
+<p>Update all submodules if you need in the future.
+From the root of your site, e.g. ~/myblog here.
+<code>git submodule update --remote --merge</code></p>
+</li>
+</ol>
+<h1 id="start-to-add-something-for-yourself">Start to Add Something for Yourself</h1>
+<ol>
+<li>Add new page</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~/myblog/
+echo <span style="color:#e6db74">&#39;theme = &#34;hugo-theme-cleanwhite&#34;&#39;</span> &gt;&gt; config.toml
+hugo new  posts/my-first-post.md
+echo <span style="color:#e6db74">&#39;Hello&#39;</span> &gt;&gt; content/posts/my-first-post.md
+
+hugo server -D <span style="color:#75715e"># -D is to show draft page</span>
+</code></pre></div><p>Read the page via browser at 
+  <a href="http://localhost:1313/posts/my-first-post/">http://localhost:1313/posts/my-first-post/</a></p>
+<ol start="2">
+<li>Change favicon if you want
+It depends on the theme you use.
+For hugo-theme-cleanwhite, put your favicon.ico to <code>static/img/favicon.ico</code></li>
+</ol>
+<h1 id="push-to-pagesgithubio">Push to pages.github.io</h1>
+<p>Follow this <a href="https://pages.github.com/">https://pages.github.com/</a>  to create ${username}.github.io. e.g. joshchen.github.io.
+and push it main branch.</p>
+<ol>
+<li>
+<p>Create ${username}.github.io ( Must be &ldquo;Public&rdquo; repository)
+
+  <img src="img/repo.png" alt="repo" /></p>
+</li>
+<li>
+<p>Generate &lsquo;public&rsquo; folder by Hugo, the command is hugo  .</p>
+</li>
+<li>
+<p>Then push it to your ${username}.github.io. Here is the reference commands:</p>
+</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~/myblog/public
+git init
+git add origin  https://github.com/joshchen/joshchen.github.io.git
+git push origin main
+</code></pre></div><ol start="4">
+<li>Use web browser to see the page under <a href="https://joshchen.github.io/en/index.html">https://joshchen.github.io/en/index.html</a>
+
+  <img src="img/jc.png" alt="joshchen" /></li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/joshchen/joshchen.github.io/commit/8edc0ec81e5b142c7f36b1663fb7d02a638971e4" title='Last modified by josh.chen | July 17, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>July 17, 2021</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/joshchen/joshchen.github.io/edit/main/exampleSite/content/docs/Tech-Misc/Web/_index.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+
+
+  <script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
+document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#setup-hugo">Setup Hugo</a></li>
+    <li><a href="#start-to-add-something-for-yourself">Start to Add Something for Yourself</a></li>
+    <li><a href="#push-to-pagesgithubio">Push to pages.github.io</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
